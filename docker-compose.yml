@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+ web:
+   image: webdevops/php-apache:ubuntu-16.04
+   ports:
+    - 8805:80
+    - 448:443
+   volumes:
+    - ./web:/app
+   links:
+    - mysql
+   environment:
+    WEB_DOCUMENT_ROOT: /app/web
+   container_name: craftcms_web
+ 
+ mysql:
+   image: mysql:5.6
+   restart: always
+   environment:
+     MYSQL_ROOT_PASSWORD: adminpwd
+     MYSQL_ADMIN: admin
+     MYSQL_PASSWORD: adminpwd
+     MYSQL_DATABASE: craftdb
+   container_name: craftcms_database
+   ports:
+    - 3309:3306
+   volumes:
+    - ./db:/var/lib/mysql
