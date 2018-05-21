@@ -1,6 +1,7 @@
 # Craft 3 CMS Docker-Compose Configuration
 
 
+
 ### Requirements
 - Images
 		[webdevops/php-apache](http://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache.html#webdevops-php-apache)
@@ -14,6 +15,9 @@ $ composer create-project craftcms/craft web
 ```
 
 * Create the environment file (.env) and add database settings
+```shell session
+$ cd web
+```
 ```yaml
   DB_SERVER="mysql"
   DB_USER="root"
