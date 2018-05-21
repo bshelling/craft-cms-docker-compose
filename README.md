@@ -4,8 +4,9 @@
 
 ### Requirements
 - Images
-		[webdevops/php-apache](http://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache.html#webdevops-php-apache)
-		[mysql:5.6](https://hub.docker.com/_/mysql/)
+...[webdevops/php-apache](http://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache.html#webdevops-php-apache)  
+...[mysql:5.6](https://hub.docker.com/_/mysql/)
+
 
 ### Instructions
 
@@ -33,3 +34,5 @@ $ docker-compose up -d
 ```curl
  http://localhost:8805/index.php?p=admin
 ```
+
+
