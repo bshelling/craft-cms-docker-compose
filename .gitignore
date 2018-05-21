@@ -1,4 +1,7 @@
 .env
 /web
 /db
+.README.md.swp
+.gitignore.swp
+.docker-compose.yml.swp
 
